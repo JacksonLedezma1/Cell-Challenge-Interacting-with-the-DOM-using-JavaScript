@@ -99,6 +99,51 @@ main {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+/* Estilos para el contador */
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+#counterValue {
+    font-size: 2.2rem;
+    font-weight: bold;
+    width: 60px;
+    text-align: center;
+    color: #222;
+    background: #f7f7f7;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    padding: 6px 0;
+}
+#increment, #decrement, #reset {
+    background: #fff;
+    color: #222;
+    border: 1.5px solid #222;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    outline: none;
+}
+#reset {
+    border-radius: 12px;
+    width: 60px;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+#increment:hover, #decrement:hover, #reset:hover {
+    background: #222;
+    color: #fff;
+    transform: scale(1.08);
+}
+
 /* Responsive */
 @media (max-width: 700px) {
     main {

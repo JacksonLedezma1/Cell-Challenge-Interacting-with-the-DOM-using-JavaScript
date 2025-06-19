@@ -40,3 +40,26 @@ function showMessage() {
   // Asignar el mensaje obtenido mediante el indice al parrafo del DOM
   message.textContent = `"${arrayMessages[index]}"`
 }
+
+// --- Contador ---
+const counterValue = document.getElementById("counterValue")
+const btnIncrement = document.getElementById("increment")
+const btnDecrement = document.getElementById("decrement")
+const btnReset = document.getElementById("reset")
+
+let count = 0
+
+btnIncrement.addEventListener("click", () => {
+  count++
+  counterValue.textContent = count
+})
+
+btnDecrement.addEventListener("click", () => {
+  count--
+  counterValue.textContent = count
+})
+
+btnReset.addEventListener("click", () => {
+  count = 0
+  counterValue.textContent = count
+})
