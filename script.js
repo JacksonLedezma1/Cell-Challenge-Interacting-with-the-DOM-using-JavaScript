@@ -63,3 +63,57 @@ btnReset.addEventListener("click", () => {
   count = 0
   counterValue.textContent = count
 })
+
+// Change styles button
+
+const shapes = [
+  "toggledShape1",
+  "toggledShape2",
+  "toggledShape3",
+  "toggledShape4",
+];
+const backgrounds = [
+  "toggledBackground1",
+  "toggledBackground2",
+  "toggledBackground3",
+  "toggledBackground4",
+];
+
+let shapesIndex = 0;
+let backgroundsIndex = 0;
+
+// Function to change shape.
+
+function changeShape() {
+  const element = document.getElementById("element");
+
+  // Remove the old shape class
+  element.classList.remove(...shapes);
+
+  // Add the new shape class
+  element.classList.add(shapes[shapesIndex]);
+
+  // Increase the navigating index and restart if the loop is completed.
+  shapesIndex = (shapesIndex + 1) % shapes.length;
+}
+
+// Function to change background color.
+
+function changeBackground() {
+  const element = document.getElementById("element");
+
+  // Remove the old background class
+  element.classList.remove(...backgrounds);
+
+  // Add the new background class
+  element.classList.add(backgrounds[backgroundsIndex]);
+
+  // Increase the navigating index and restart if the loop is completed.
+  backgroundsIndex = (backgroundsIndex + 1) % backgrounds.length;
+}
+
+// Apply the initial styles when loading the page.
+document.addEventListener("DOMContentLoaded", function () {
+  changeShape();
+  changeBackground();
+});
