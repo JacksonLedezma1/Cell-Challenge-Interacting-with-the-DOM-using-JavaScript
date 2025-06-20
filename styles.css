@@ -144,6 +144,120 @@ main {
     transform: scale(1.08);
 }
 
+
+/* Change styles button */
+
+.stylesButton {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stylesButton__element{
+    margin-top: 50px;
+}
+
+.stylesButton__buttonDiv{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.stylesButton__button {
+  font-family: "Courier New", Courier, monospace;
+  width: 200px;
+  height: 60px;
+  border-bottom: 5px solid black;
+  transition: transform 0.1s ease;
+  border-radius: 15px;
+}
+
+.stylesButton__button:hover {
+  transform: scale(1.05);
+}
+
+.stylesButton__button:active {
+  color: white;
+  background-color: black;
+}
+
+/* Shapes List */
+
+.toggledShape1 {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 5px 15px black;
+  border-radius: 15px;
+}
+
+.toggledShape2 {
+  width: 400px;
+  height: 200px; 
+  box-shadow: 0px 5px 15px black;
+  border-radius: 15px; 
+}
+
+.toggledShape3{
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 5px 15px black;
+  border-radius: 50%;
+}
+
+.toggledShape4 {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 5px 15px black;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  transform-origin: center; 
+
+}
+
+/* Backgrounds List */
+
+.toggledBackground1 {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.toggledBackground2 {
+  background: #22c1c3;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.toggledBackground3 {
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+.toggledBackground4{
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+
 /* Responsive */
 @media (max-width: 700px) {
     main {
@@ -157,6 +271,7 @@ main {
         gap: 10px;
     }
 }
+
 
 /* 
     End of the CSS for the page
