@@ -48,6 +48,7 @@ El archivo `script.js` se enlaza al final del `body` en el HTML con la línea:
 Esto asegura que el DOM esté cargado antes de que el JavaScript se ejecute.
 
 ### ¿Cómo interactúa cada sección?
+- **Conditional Greeting:** El botón ejecuta la función `saludar()` al hacer clic. Esta función obtiene la hora actual y muestra un saludo personalizado ("Good morning!", "Good afternoon!" o "Good evening!") en el elemento correspondiente del DOM, dependiendo del momento del día.
 - **Counter, Random Selector, Input Validation, Change Styles y Loop Button**: Cada una tiene botones y/o campos de entrada con un `id` único. El JavaScript utiliza `document.getElementById` o `document.querySelector` para obtener referencias a estos elementos y luego les asigna eventos (`addEventListener` o atributos `onclick`).
 - **Manipulación del DOM**: Cuando el usuario interactúa (por ejemplo, hace clic en un botón), el código ejecuta funciones que actualizan el contenido, el estilo o la visibilidad de los elementos en la página, mostrando resultados inmediatos.
 - **Creación dinámica**: En el caso del Loop Button, el JavaScript genera tarjetas (cards) de manera dinámica usando `document.createElement` y las inserta en el contenedor correspondiente.
