@@ -19,7 +19,7 @@
                 <li><a href="#counter">Counter button</a></li>
                 <li><a href="#selector">Selector button</a></li>
                 <li><a href="#validation">Validation button</a></li>
-                <li><a href="#change">Change color button</a></li>
+                <li><a href="#change">Change Styles button</a></li>
                 <li><a href="#cycle">Cycle button</a></li>
             </ul>
         </nav>
@@ -30,15 +30,45 @@
         </section>
         <section id="counter" class="card">
             <h2>Counter</h2>
+            <div class="counter-container">
+                <button id="decrement">-</button>
+                <span id="counterValue">0</span>
+                <button id="increment">+</button>
+                <button id="reset">Reset</button>
+            </div>
         </section>
+        <!-- Boton Felipe Marin -->
         <section id="selector" class="card">
             <h2>Random Selector</h2>
+
+            <p id="randomMessage">Aqui se mostrara una frase aleatoria al presionar el boton</p>
+
+            <button id="btnRandom">Mostrar mensaje aleatorio</button>
         </section>
         <section id="validation" class="card">
             <h2>Input Validation</h2>
         </section>
+
+        <!-- Change Styles Button José Granados -->
         <section id="change" class="card">
-            <h2>Change Color</h2>
+            <h2>Change Styles</h2>
+            <div class="stylesButton__element" id="element"></div>
+            <div class="stylesButton__buttonDiv">
+                <button
+                class="stylesButton__button"
+                id="shapesButton"
+                onclick="changeShape()"
+                >
+                Change Shape
+                </button>
+                <button
+                class="stylesButton__button"
+                id="backgroundButton"
+                onclick="changeBackground()"
+                >
+                Change Background
+                </button>
+            </div>
         </section>
         <!-- Loop Button José Manuel Granados -->
         <section id="cycle" class="card">
