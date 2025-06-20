@@ -4,13 +4,13 @@ const name = document.getElementById("name")
 const email = document.getElementById("email")
 const pass = document.getElementById("Passwords")  
 const form = document.getElementById("form")
-const message = document.getElementById("message")  
+const messageValidation = document.getElementById("messageValidation")  
 form.addEventListener("submit", e => {
     e.preventDefault()
     let warnings = ""
     let login = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    message.innerHTML = ""
+    messageValidation.innerHTML = ""
 
     if (name.value.length < 6) {
         warnings += `The name is not valid <br>`
@@ -26,9 +26,9 @@ form.addEventListener("submit", e => {
     }
 
     if (login) {
-        message.innerHTML = warnings
+        messageValidation.innerHTML = warnings
     } else {
-        message.innerHTML = `Submitted`
+        messageValidation.innerHTML = `Submitted`
     }
 })
 
